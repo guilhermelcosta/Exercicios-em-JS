@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de tarefas</title>
+    <link rel="stylesheet" href="./assets/css/variables.css">
+    <link rel="stylesheet" href="./assets/css/main.css">
+    <script src="./assets/js/main.js" defer></script>
+</head>
+
+<body onload="carregaTarefas()">
+
+    <section class="main-container">
+        <h1>Lista de tarefas</h1>
+        <input type="text" id="descricao-tarefa">
+        <button id="adicionar-tarefa">Adicionar Tarefa</button>
+        <div id="lista-tarefas"></div>
+    </section>
+
+    <style>
+        input {
+            width: 300px;
+        }
+        
+        button {
+            width: 150px;
+            cursor: pointer;
+        }
+
+        .btn-remover {
+            width: 70px;
+            margin-left: 30px;
+            background-color: var(--result-color);
+        }
+
+        .btn-remover:hover {
+            background-color: #972d1d;
+        }
+    </style>
+
+</body>
+
+</html>
